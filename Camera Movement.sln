@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera Movement", "Camera Movement.csproj", "{401DCC23-BA2E-EAF6-B599-DA413001F49B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{401DCC23-BA2E-EAF6-B599-DA413001F49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401DCC23-BA2E-EAF6-B599-DA413001F49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401DCC23-BA2E-EAF6-B599-DA413001F49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401DCC23-BA2E-EAF6-B599-DA413001F49B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
