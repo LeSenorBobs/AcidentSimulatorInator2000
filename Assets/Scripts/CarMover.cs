@@ -34,8 +34,5 @@ public class CarMover : MonoBehaviour {
             Quaternion turn = Quaternion.Euler(0, horizontalTilt, 0);
             transform.rotation = turn;
         }
-
-
-
     }
 }
