@@ -9,30 +9,38 @@ public class CarMover : MonoBehaviour {
     [SerializeField]
     int speed = 10;
     [SerializeField]
-    int tiltSpeed = 10;
-    [SerializeField]
-    int turnSmoothing = 10;
+    int brakeSpeed = 10;
+
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-
 	}
 	
 	
 	void FixedUpdate () {
-        //Testing movement
-        if (Input.GetAxis("Vertical") != 0)
-        {
-            Vector3 movement = new Vector3(1, 0, 0 );
+        //'vertical movement' and 'velocity' variables.
+        float verM = Input.GetAxis("Vertical");
+        var vel = rb.velocity;
+
+        if (verM > 0) {
+            Vector3 movement = new Vector3(0, 0, 1);
             rb.AddForce(movement * speed);
         }
 
-        if (Input.GetAxis("Horizontal") != 0)
-        {
-            float horizontalTilt = Input.GetAxis("Horizontal") * tiltSpeed;
-            Quaternion turn = Quaternion.Euler(0, horizontalTilt, 0);
-            transform.rotation = turn;
+        //Braking only works when there is foreward movement.
+        if (verM < 0 && vel.z > 0 ) {
+            Vector3 movement = new Vector3(0, 0, 1);
+            rb.AddForce(-movement * brakeSpeed);
         }
+
+        //No driving backwards shenanigans.
+        
+        if (vel.z < 0.000) {
+            Vector3 movement = Vector3.zero;
+            rb.velocity = movement;
+        }
+        
+        //Debug.Log(vel.z);
     }
 }
