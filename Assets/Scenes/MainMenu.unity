@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 81027616}
   m_Layer: 0
   m_Name: LevelSelectButtonCube
-  m_TagString: Untagged
+  m_TagString: LevelSelectButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ Transform:
   m_Children:
   - {fileID: 1897806943}
   m_Father: {fileID: 1296502541}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &81027616
 MeshRenderer:
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 542780732}
   m_Layer: 0
   m_Name: QuitButtonCube
-  m_TagString: Untagged
+  m_TagString: QuitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,7 +310,7 @@ Transform:
   m_Children:
   - {fileID: 1502588996}
   m_Father: {fileID: 1296502541}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &542780732
 MeshRenderer:
@@ -551,6 +551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1363086776}
+  - {fileID: 2029803956}
   - {fileID: 81027615}
   - {fileID: 542780731}
   m_Father: {fileID: 0}
@@ -569,7 +570,7 @@ GameObject:
   - component: {fileID: 1363086777}
   m_Layer: 0
   m_Name: StartButtonCube
-  m_TagString: Untagged
+  m_TagString: StartButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,7 +1069,7 @@ GameObject:
   - component: {fileID: 2029803953}
   m_Layer: 0
   m_Name: TutorialButtonCube
-  m_TagString: Untagged
+  m_TagString: TutorialButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1130,11 +1131,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2029803952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 1}
   m_Children:
   - {fileID: 1425897076}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1296502541}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
