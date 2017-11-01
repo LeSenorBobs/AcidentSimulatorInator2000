@@ -12,7 +12,6 @@ public class CameraController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         transform.rotation = Turningangle;
-        
 	}
 	
 	// Update is called once per frame

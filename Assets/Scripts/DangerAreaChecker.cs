@@ -4,33 +4,22 @@ using UnityEngine;
 
 public class DangerAreaChecker : MonoBehaviour {
 
-    //entertime,
-    float eTime;
+    float mSpeed = 3;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
 	
+	}
+
+    private void Update()
+    {
+        transform.Translate(Vector3.forward * Time.deltaTime * mSpeed);
+    }
+
     void OnTriggerEnter(Collider other)
-    {
-        eTime = Time.fixedTime;
-        Debug.Log(eTime);
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        eTime = Time.fixedTime;
-        Debug.Log(eTime);
-    }
-
-
-    void OnTriggerExit(Collider other)
     {
         Destroy(other.gameObject);
         Debug.Log("Failed");
     }
-
-
 }
 
