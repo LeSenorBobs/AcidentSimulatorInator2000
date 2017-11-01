@@ -8,6 +8,7 @@ TagManager:
   - LevelSelectButton
   - QuitButton
   - TutorialButton
+  - KillBox
   layers:
   - Default
   - TransparentFX
