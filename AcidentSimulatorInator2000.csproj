@@ -224,6 +224,7 @@
     <Compile Include="Assets\Scripts\DangerAreaChecker.cs" />
     <Compile Include="Assets\Scripts\OnCollosisionDestroy.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\TimmyMover.cs" />
     <Compile Include="Assets\Scripts\WheelController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
