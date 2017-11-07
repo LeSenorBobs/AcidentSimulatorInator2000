@@ -9,6 +9,8 @@ TagManager:
   - QuitButton
   - TutorialButton
   - KillBox
+  - Timmy
+  - TimmyTimer
   layers:
   - Default
   - TransparentFX

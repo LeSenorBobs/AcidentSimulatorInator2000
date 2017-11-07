@@ -13,13 +13,17 @@ public class DangerAreaChecker : MonoBehaviour {
 
     private void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * mSpeed);
+        
     }
-
-    void OnTriggerEnter(Collider other)
+    //when player collides with box, player dies
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
-        Debug.Log("Failed");
+        if (other.CompareTag ("Player"))
+        {
+            Destroy(other.gameObject);
+            Debug.Log("PleaseDie");
+        }
+        Debug.Log("does it even work?");
     }
 }
 
