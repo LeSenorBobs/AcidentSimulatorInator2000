@@ -11,6 +11,7 @@ TagManager:
   - KillBox
   - Timmy
   - TimmyTimer
+  - ReturnButton
   layers:
   - Default
   - TransparentFX

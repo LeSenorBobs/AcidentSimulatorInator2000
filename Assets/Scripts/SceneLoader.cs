@@ -8,7 +8,6 @@ public class SceneLoader : MonoBehaviour
 {
 
     public AudioClip ButtonClick_Audio;
-    public AudioClip ButtonHover_Audio;
     public Vector3 playersource;
 
     // Use this for initialization
@@ -28,7 +27,7 @@ public class SceneLoader : MonoBehaviour
         if (gameObject.tag == "StartButton")
         {
             AudioSource.PlayClipAtPoint(ButtonClick_Audio, playersource, 3f); //sound effects for clicking while buttondown
-            SceneManager.LoadScene("CarMovementTest"); //what function does after buttondown enabled by function above
+            SceneManager.LoadScene("Level 1"); //what function does after buttondown enabled by function above
         }
 
         if (gameObject.tag == "LevelSelectButton")
@@ -65,12 +64,12 @@ public class SceneLoader : MonoBehaviour
 
     private void OnMouseOver()
     {
-        gameObject.GetComponent<Renderer>().material.color = Color.white; //color changed to white
+        gameObject.GetComponent<Renderer>().material.color = Color.grey; //color changed to white
     }
 
     private void OnMouseExit()
     {
-        gameObject.GetComponent<Renderer>().material.color = Color.red; //returns normal colors back from hover grey (curent buttons are multi color, but final version will have all red)
+        gameObject.GetComponent<Renderer>().material.color = Color.white; //returns normal colors back from hover grey (curent buttons are multi color, but final version will have all red)
     }
 
 

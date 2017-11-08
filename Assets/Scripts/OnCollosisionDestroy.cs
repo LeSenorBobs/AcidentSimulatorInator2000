@@ -11,7 +11,7 @@ public class OnCollosisionDestroy : MonoBehaviour
         if (other.gameObject.tag == "KillBox")
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("CarMovementTest");
+            SceneManager.LoadScene("Level 1");
         }
     }
 }
